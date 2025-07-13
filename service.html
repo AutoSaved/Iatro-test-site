@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>about</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="index.html" class="header__logo">
+          <img src="images/Webiatro3@2x.png" width="110px" />
+        </a>
+        <div class="header__nav-links" id="navLinks">
+          <button class="header__close-icon" onclick="hideMenu()">
+            <img src="images/closeI.png" />
+          </button>
+          <ul class="header__menu">
+            <li class="header__menu-item"><a href="about.html">ABOUT US</a></li>
+            <li class="header__menu-item"><a href="service.html">OUR SERVICES</a></li>
+            <li class="header__menu-item"><a href="https://www.iatrolex.co.za/">MEDICOLEGAL</a></li>
+            <li class="header__menu-item"><a href="contacts.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <button class="header__menu-icon" onclick="showMenu()">
+          <img src="images/menuI.png" />
+        </button>
+      </nav>
+      <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+          navLinks.style.right = "0";
+        }
+        function hideMenu() {
+          navLinks.style.right = "-250px";
+        }
+      </script>
+    </header>
+    <section class="services">
+       <div class="services_box">
+          <div class="services_id">
+             <img src="images/xrayi.png" class="services_icon" width="100px"/>
+             <h4 class="services_title">X-Ray<br/>(General Radiology)</h4>              
+          </div>
+          <div class="services_text">
+             <img src="images/ia1.png" class="services_illustration" width="700px"/>
+             <p class="services_description">X-ray imaging involves exposing a part of the body to a small dose of ionising radiation to produce pictures to help 
+             doctors diagnose and treat various conditions. This is often used as a first step in understanding what’s happening inside your body.
+             </p>              
+          </div>
+       </div> 
+       
+        <div class="services_box">
+          <div class="services_id">
+             <img src="images/mammog.png" class="services_icon" width="100px"/>
+             <h4 class="services_title">Mammography</h4>              
+          </div>
+          <div class="services_text">
+             <img src="images/main_mammo.png" class="services_illustration" width="700px"/>
+             <p class="services_description">Mammography is a special type of X-ray that helps doctors check 
+             for signs of breast cancer. It creates detailed images of breast tissue, allowing early detection
+              of any changes that might not be felt during a physical exam. The procedure may cause a slight discomfort
+              , but it’s an important tool for keeping your breast health in check. Regular annual mammograms remains 
+              the best tool currently available in the early detection of breast cancer.
+             </p>              
+          </div>
+       </div> 
+       
+        <div class="services_box">
+          <div class="services_id">
+             <img src="images/ultrason.png" class="services_icon" width="100px"/>
+             <h4 class="services_title">Ultrasonography</h4>              
+          </div>
+          <div class="services_text">
+             <img src="images/sonar.jpg" class="services_illustration" width="700px"/>
+             <p class="services_description">Ultrasonography, or ultrasound imaging, uses sound waves to create pictures
+              of the inside of the body. Ultrasonography is widely used for various medical purposes including pregnancy monitoring, diagnosing organ conditions, and guiding certain procedures.
+             </p>              
+          </div>
+       </div> 
+       
+        <div class="services_box">
+          <div class="services_id">
+             <img src="images/ctscan.png" class="services_icon" width="100px"/>
+             <h4 class="services_title">Computed Tomography <br/>(CT Scan)</h4>              
+          </div>
+          <div class="services_text">
+             <img src="images/CT%20THUMB.png" class="services_illustration" width="700px"/>
+             <p class="services_description"> Computed tomography, commonly known
+              as CT imaging or CAT scan, is a medical imaging technique that combines multiple X-ray images taken from 
+              different angles to create detailed cross-sectional pictures of the body. It allows doctors to examine internal
+               structures such as bones, organs, and tissues with greater clarity than a standard X-ray. By using advanced
+                computer processing, a CT scan provides precise images that help diagnose conditions like fractures, tumors, 
+                infections, and internal injuries. This non-invasive procedure is often used in emergencies, surgical planning, 
+                and monitoring diseases, making it an invaluable tool in modern medicine.
+             </p>              
+          </div>
+       </div> 
+       
+        <div class="services_box">
+          <div class="services_id">
+             <img src="images/BasicIN.png" class="services_icon" width="100px"/>
+             <h4 class="services_title">Basic Intervention <br/>Procedures</h4>              
+          </div>
+          <div class="services_text">
+             <img src="images/118362iatro.jpg" class="services_illustration" width="700px"/>
+             <p class="services_description">This uses imaging techniques such as CT and ultrasound, to guide minimally 
+             invasive procedures. These techniques help diagnose and treat various conditions without the need for major
+              surgery. Procedures may include fine needle aspiration cytology (FNAC), tru-cut core needle biopsy and aspiration/drainage.
+                Ultrasound /CT image-guided biopsies are used to precisely guide a needle to the area of concern, such as a tumor or abnormal tissue.
+                 This technique improves accuracy, ensuring that the sample taken is from the correct location. 
+             </p>              
+          </div>
+       </div> 
+        
+    </section>
+
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a href="iatrolexhome.html" class="footer__logo">
+          <img src="images/logowht.svg" width="80px" />
+        </a>
+        <div class="footer__links">
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="about.html">ABOUT US</a></li>
+            <li class="footer__menu-item"><a href="services.html">OUR SERVICES</a></li>
+            <li class="footer__menu-item"><a href="https://www.iatrolex.co.za/">MEDICOLEGAL</a></li>
+            <li class="footer__menu-item"><a href="contacts.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <a href="#"><img src="images/INTAICON.png" /></a>
+          <a href="#"><img src="images/FBICON.png" /></a>
+          <a href="#"><img src="images/TWITICON.png" /></a>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>

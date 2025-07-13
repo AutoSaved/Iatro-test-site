@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>about</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="index.html" class="header__logo">
+          <img src="images//logogry.svg" width="110px" />
+        </a>
+        <div class="header__nav-links" id="navLinks">
+          <button class="header__close-icon" onclick="hideMenu()">
+            <img src="images/closeI.png" />
+          </button>
+          <ul class="header__menu">
+            <li class="header__menu-item"><a href="about.html">About us</a></li>
+            <li class="header__menu-item"><a href="service.html">Our Services</a></li>
+            <li class="header__menu-item"><a href="https://www.iatrolex.co.za/">Medicolegal</a></li>
+            <li class="header__menu-item"><a href="contacts.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <button class="header__menu-icon" onclick="showMenu()">
+          <img src="images/menuI.png" />
+        </button>
+      </nav>
+      <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+          navLinks.style.right = "0";
+        }
+        function hideMenu() {
+          navLinks.style.right = "-250px";
+        }
+      </script>
+    </header>
+
+    <section class="body-logo">
+      <div class="logo">
+        <img src="images/logowht.svg" width="300px" />
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about__text-wrap">
+        <h2 class="about__title">About Us</h2>
+        <p class="about__description">
+          We are highly qualified diagnostic radiologists, dedicated to delivering professional and dependable medical
+          imaging services. Equipped with cutting-edge diagnostic technology and supported by a skilled team of medical
+          imaging specialists, we ensure precision and excellence in patient care. At iatrolex, your health, comfort and
+          safety are our top priorities, providing expert service in a welcoming environment.
+        </p>
+      </div>
+      <div class="about__gallery">
+        <img src="images/boutus1.png" class="about__image" height="250px" />
+        <img src="images/boutus2.png" class="about__image" height="250px" />
+        <img src="images/boutus3.png" class="about__image" height="250px" />
+      </div>
+      <p class="about__note">
+        our team is made up of professionals across multiple disciplines allowing us to provide our best service at
+        every level.
+      </p>
+    </section>
+
+    <section class="legal">
+      <div class="legal_text">
+        <a href="#" class="legal__button">Legal</a>
+        <p class="legal__description">
+          Iatrolex is a leading medico-legal consultancy in South Africa, established in 2017 to provide much needed
+          services and expertise in the area of Medical Law and Medical Malpractice.  
+          iatroLex MedicoLegal Consulting was established to provide consulting services to plaintiff 
+          and defense attorneys on medical malpractice matters, insurance companies and health
+          care organizations and to assist the courts in achieving outcomes that are morally right
+          and fair, in accordance with the law.
+        </p>
+      </div>
+    </section>
+
+    <section class="locate">
+      <div class="locate_text">
+        <h2 class="locate_title">Locate Us</h2>
+        <p class="locate_description">
+          Iatrolex currently operates in Mpumalanga and Limpopo Province. <br />We can be found at these locations:<br />
+          <span style="color: #94a3b8"
+            >Riverside Medical Suites<br />
+            RH Phodiclinic<br />
+            Medleb Private Hospital</span
+          >
+        </p>
+      </div>
+      <img class="locate_icon" src="images/locationicon.svg" />
+    </section>
+
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a href="iatrolexhome.html" class="footer__logo">
+          <img src="images/logoblk.svg" width="80px" />
+        </a>
+        <div class="footer__links">
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="about.html">ABOUT US</a></li>
+            <li class="footer__menu-item"><a href="services.html">OUR SERVICES</a></li>
+            <li class="footer__menu-item"><a href="https://www.iatrolex.co.za/">MEDICOLEGAL</a></li>
+            <li class="footer__menu-item"><a href="contacts.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <a href="#"><img src="images/INTAICON.png" /></a>
+          <a href="#"><img src="images/FBICON.png" /></a>
+          <a href="#"><img src="images/TWITICON.png" /></a>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
