@@ -8,14 +8,14 @@
   position: fixed;
   background-color: rgba(111, 141, 117);
   background-position: center;
-  height:max-content;
+  height:20vh;
   width: 100%;
-  z-index: 50;
+  z-index: 2;
 }
 .header__nav {
   display: flex;
 
-  padding: 2% 6%;
+  padding: 3% 6%;
   justify-content: space-between;
   align-items: center;
 }
@@ -107,7 +107,7 @@ nav img {
   font-size: 18px;
   text-align: center;
   width: 60%;
-  color: #87898d;
+  color: #1f2937;
 }
 #grid-title {
   display: flex;
@@ -286,7 +286,7 @@ nav img {
   font-size: 20px;
   text-align: left;
   width: 70%;
-  color: #87898d;
+  color: #1f2937;
   border-left: solid;
   border-left-color: #87898d;
   border-left-width: thin;
@@ -309,7 +309,7 @@ nav img {
   font-size: 20px;
   text-align: center;
   padding: 40px;
-  color: #87898d;
+  color: #1f2937;
   max-width: 70%;
 }
 
@@ -400,7 +400,7 @@ nav img {
     font-size: 12px;
     text-align: left;
     width: 100%;
-    color: #87898d;
+    color: #1f2937;
     border-left: solid;
     border-left-color: #87898d;
     border-left-width: thin;
@@ -527,7 +527,7 @@ nav img {
 }
 
 .footer__menu-item a {
-  color: #313131;
+  color: #1f2937;
   text-decoration: none;
   text-align: center;
   font-size: 12px;
@@ -560,6 +560,28 @@ nav img {
   flex-wrap: wrap;
   width: 100%;
 }
+.body-textservice {
+  display: block;
+  min-height: 100vh;
+  background-image: url(images/services\ hero.png);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 100px
+}
+.text-boxservice {
+  width: 300px;
+  color: #6f8d75;
+  position: absolute;
+  top: 75%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+.text-boxservice h1 {
+  font-size: 50px;
+  text-align: left;
+}
+
 
 .services_box {
   display: flex;
@@ -591,7 +613,7 @@ nav img {
   flex-wrap: wrap;
 }
 .services_description {
-  color: #87898d;
+  color: #1f2937;
   width: cover;
   margin: auto;
 }
