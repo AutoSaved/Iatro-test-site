@@ -5,7 +5,7 @@
 }
 .header {
   
-  position: fixed;
+  position: sticky;
   background-color: rgba(111, 141, 117);
   background-position: center;
   height:20vh;
@@ -66,13 +66,15 @@ nav img {
   background-image: url(images/pengiatro3@2x.png);
   background-position: center;
   background-size: cover;
+ 
+  
 }
 
 .text-box {
   width: 300px;
   color: #6f8d75;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 15%;
   transform: translate(-50%, -50%);
   text-align: left;
@@ -89,7 +91,7 @@ nav img {
   display: flexbox;
   flex-direction: column;
   background-color: #e7f4f0;
-  min-height: 250px;
+  min-height: 50vh;
   width: 100%;
 
   align-content: center;
