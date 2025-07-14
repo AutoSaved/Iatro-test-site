@@ -86,10 +86,11 @@ nav img {
 }
 
 .text-box h1 {
-  font-size: 50px;
+  font-size:clamp(2.5rem, 3vw,  2.5rem);
+
 }
 .text-box p {
-  font-size: 20px;
+  font-size: clamp(1.2rem, 1.5vw, 1.2rem);
 }
 
 .about-container {
@@ -474,7 +475,7 @@ nav img {
   text-align: left;
 }
 .text-boxservice h1 {
-  font-size:MINMAX(15px, 50PX);
+  font-size:clamp(1.5rem,5vw,3.5rem);
   text-align: left;
 }
 
@@ -486,6 +487,7 @@ nav img {
   align-content: center;
   max-height: 600px;
   align-items: center;
+  padding-bottom: 10vh;
   margin: auto;
 }
 
@@ -496,9 +498,9 @@ nav img {
   gap: 15px;
   align-content: center;
   text-align: center;
-  flex-wrap: wrap;
+ 
   margin: auto;
-  width: 700px;
+  width: 70%
 }
 
 .services_id {
@@ -512,11 +514,12 @@ nav img {
   color: #1f2937;
   width: cover;
   margin: auto;
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .services_title {
   text-align: center;
-  font-size: 20px;
+  font-size:clamp(1.3rem, 4vw,1.8rem); ;
   padding: 20px;
   color: #6f8d75;
 }
@@ -527,10 +530,11 @@ nav img {
 
 .services_illustration {
   border-radius: 30px;
- max-width: 100%;
+   max-width: 70%;
    height:auto;
   object-fit: cover;
   aspect-ratio: 16/9;
+  margin: auto;
 }
 
 .contact-card{
