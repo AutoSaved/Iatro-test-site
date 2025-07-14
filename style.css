@@ -770,4 +770,12 @@ iframe{
   color: #49644f;  
   padding-top: 20px;
   padding-bottom: 20px;}
+
+  .footer__menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
 }
