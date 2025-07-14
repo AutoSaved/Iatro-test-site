@@ -205,9 +205,10 @@ nav img {
 }
 
 .footer {
+  display: block;
   background-color: #6f8d75;
   padding: 2% 6%;
-  width: 100%;
+  
 }
 
 .footer__nav {
@@ -702,7 +703,6 @@ iframe{
     left: 35%;
     transform: translate(-50%, -50%);
   }
-  .footer{width:100%}
   .header {
     position: fixed;
   }
@@ -762,7 +762,7 @@ iframe{
 }
 .location-title{
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   color: #49644f;  
   padding-top: 20px;
   padding-bottom: 20px;}
