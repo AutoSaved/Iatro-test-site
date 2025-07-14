@@ -47,6 +47,8 @@
                 navLinks.style.right = "-200px";
               }
 
+document.getElementById("serviceButton").onclick = function() {
+      window.location.href = "service.html";}
 
   </script>
 </header>
@@ -77,7 +79,7 @@
     </div> 
         <h2 class="service-title">X-Ray<br/>(General Radiology)</h2>
         <p class="service-info">X-ray imaging involves exposing a part of the body to a small dose of ionising radiation to produce pictures to help doctors diagnose and treat various conditions.</p>
-        <button class="border-button">Learn More</button>
+        <button class="border-button" id="serviceButton">Learn More</button>
     </div>
 
     <div class="service">
@@ -89,7 +91,7 @@
         <p class="service-info">Mammography is a special type of X-ray that helps doctors check for signs of breast cancer.
          It creates detailed images of breast tissue, allowing early detection of any changes that 
         might not be felt during a physical exam.</p>
-       <button class="border-button">Learn More</button>
+       <button class="border-button" onclick="location.href='service.html'">Learn More</button>
       </div>
 
     <div class="service">
@@ -99,7 +101,7 @@
         </div>
       <h2 class="service-title">Ultrasonography</h2>
       <p class="service-info">Ultrasonography, or ultrasound imaging, uses sound waves to create pictures of the inside of the body.</p>
-       <button class="border-button">Learn More</button>
+       <button class="border-button" onclick="location.href='service.html'">Learn More</button>
     </div>
   
 
@@ -112,7 +114,7 @@
       <p class="service-info">Computed tomography, commonly known as CT imaging or CAT scan, is a medical imaging technique 
         that combines multiple X-ray images taken from different angles to create detailed 
         cross-sectional pictures of the body.</p>
-       <button class="border-button">Learn More</button>
+       <button class="border-button" onclick="location.href='service.html'">Learn More</button>
         </div>
   
     <div class="service">
@@ -123,7 +125,7 @@
       <h2 class="service-title">Basic Intervention<br/>Procedures</h2>
       <p class="service-info">This uses imaging techniques such as CT and ultrasound, to guide minimally invasive procedures.
         These techniques help diagnose and treat various conditions without the need for major surgery.</p>
-       <button class="border-button">Learn More</button>
+       <button class="border-button" onclick="location.href='service.html'">Learn More</button>
     </div>  
    
   </section>
