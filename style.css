@@ -4,6 +4,10 @@
   font-family: "Montserrat", sans-serif;
   
 }
+body{height:100%;}
+html {
+  height: 100%;
+}
 .header {
   
   position: sticky;
@@ -601,14 +605,28 @@ iframe{
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   margin: auto;   
   position:static;
-  
+  }
 
 
-
+.contactsHero-image {
+  display:block;
+ 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/contacthero.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-
-
+.contactsHero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
 
 
 
@@ -770,6 +788,7 @@ iframe{
   color: #49644f;  
   padding-top: 20px;
   padding-bottom: 20px;}
+
 
   .footer__menu {
   list-style: none;
