@@ -462,21 +462,25 @@ nav img {
   width: 100%;
 }
 .body-textservice {
-  display: block;
-  min-height: 100vh;
-  background-image: url(images/services\ hero.png);
+  display: block;  
   background-position: center;
   background-size: cover;
-  margin-bottom: 100px
+  background-image: url("images/services\ hero.png");
+  height: 100%;  
+  background-size: cover;
+  position: relative;  
 }
+
+
 .text-boxservice {
   width: 150;
-  color: #6f8d75;
+  color: #506655;
   position: absolute;
-  top: 35%;
+  top: 55%;
   left: 25%;
   transform: translate(-50%, -50%);
   text-align: left;
+  
 }
 .text-boxservice h1 {
   font-size:clamp(1.5rem,5vw,3.5rem);
@@ -492,6 +496,7 @@ nav img {
   max-height: 600px;
   align-items: center;
   padding-bottom: 10vh;
+  padding-top: 5%;
   margin: auto;
 }
 
@@ -632,11 +637,15 @@ iframe{
 
 /*========== META RESPONSE ==========*/
 @media (max-width: 700px) {
+  html{height: 100%;}
+  body{height: 100%;}
   .header {
     position: sticky;
     width: 100%;
-    min-height: 15vh;
+    height: 22vh;
     background-color: rgba(111, 141, 117);
+    background-position: center;
+    top:0;
     z-index: 2;
   }
 
@@ -645,6 +654,7 @@ iframe{
     flex-direction: column;
     align-items: center;
     margin: auto;
+    
   }
   
   .header__menu {
@@ -689,6 +699,12 @@ iframe{
 
   .header__menu-icon img {
     width: 30px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
   }
 
  .footer__nav {
