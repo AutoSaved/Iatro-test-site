@@ -8,10 +8,8 @@ body{height:100%;}
 html {
   height: 100%;
 }
-.header {
-  
+.header {  
   position: sticky;
-
   background-color: rgba(111, 141, 117);
   background-position: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -53,7 +51,8 @@ nav img {
 }
 .header__menu-item a:hover {
   color: #bbe6c4;
-  transition: 0.5s;
+  transition: 1s;
+  font-size: 18px;
 }
 
 .header__menu-item::after {
@@ -62,12 +61,12 @@ nav img {
   height: 2px;
   background: #bbe6c4;
   display: block;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .header__menu-item:hover::after {
-  width: 100%;
-}
+  width: 100%;  
+ }
 
 .body-text {
   display: block;
@@ -84,7 +83,7 @@ nav img {
   color: #6f8d75;
   position: absolute;
   top: 50%;
-  left: 15%;
+  left: 18%;
   transform: translate(-50%, -50%);
   text-align: left;
 }
@@ -116,7 +115,7 @@ nav img {
 
 .about-container p {
   margin: auto;
-  font-size: 18px;
+  font-size: clamp(1.2rem, 1.5vw, 1.2rem);
   text-align: center;
   width: 60%;
   color: #1f2937;
@@ -179,7 +178,7 @@ nav img {
 }
 .service-title {
   padding: 16px;
-  font-size: 20px;
+  font-size: clamp(1.2rem, 1.5vw, 1.2rem);
   color: #6f8d75;
 }
 
@@ -439,7 +438,7 @@ nav img {
   background-color: red;
   border-radius: 3px;
   padding: 10px 15px;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .footer__social {
@@ -460,12 +459,13 @@ nav img {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 20vh;
 }
 .body-textservice {
   display: block;  
   background-position: center;
   background-size: cover;
-  background-image: url("images/services\ hero.png");
+  background-image: url("images/servicesHero.jpg");
   height: 100%;  
   background-size: cover;
   position: relative;  
@@ -473,30 +473,29 @@ nav img {
 
 
 .text-boxservice {
-  width: 150;
+  
   color: #506655;
   position: absolute;
   top: 55%;
   left: 25%;
   transform: translate(-50%, -50%);
   text-align: left;
+  font-size:clamp(1.5rem,3vw,3.5rem);
   
 }
-.text-boxservice h1 {
-  font-size:clamp(1.5rem,5vw,3.5rem);
-  text-align: left;
-}
+
+
 
 
 .services_box {
   display: flex;
-  width: 80%;
+  width: 90%;
   justify-content: center;
   align-content: center;
-  max-height: 600px;
-  align-items: center;
-  padding-bottom: 10vh;
-  padding-top: 5%;
+  height: 100%;
+  align-items: center;  
+  padding-top:10%;
+  padding-bottom: 10%;
   margin: auto;
 }
 
@@ -507,7 +506,6 @@ nav img {
   gap: 15px;
   align-content: center;
   text-align: center;
- 
   margin: auto;
   width: 70%
 }
@@ -521,7 +519,7 @@ nav img {
 }
 .services_description {
   color: #1f2937;
-  width: cover;
+  width: 90%;
   margin: auto;
   font-size: clamp(1rem, 2vw, 1.5rem);
 }
@@ -539,8 +537,8 @@ nav img {
 
 .services_illustration {
   border-radius: 30px;
-   max-width: 70%;
-   height:auto;
+  width: 90%;
+  height:auto;
   object-fit: cover;
   aspect-ratio: 16/9;
   margin: auto;
@@ -549,8 +547,7 @@ nav img {
 .contact-card{
   display:grid; 
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 50px;
-  
+  gap: 50px;  
   position: relative;
   width: 80%;
   padding-top: 200px;
@@ -639,6 +636,7 @@ iframe{
 @media (max-width: 700px) {
   html{height: 100%;}
   body{height: 100%;}
+  
   .header {
     position: sticky;
     width: 100%;
@@ -650,6 +648,7 @@ iframe{
   }
 
   .header__nav{
+    position:sticky;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -668,12 +667,13 @@ iframe{
     padding: 20px;
   }
   .header__nav-links {
-    display: block;
+    
     position: absolute;
     background-color: #6f8d75;
-    height: 100vh;
+    height: 400px;
     width: 300px;
-    right: -300px;   
+    top: -400px;
+      
     text-align: center;
     transition: 1s;
   }
@@ -704,8 +704,21 @@ iframe{
   .about-container {
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    
+    width:100%;
   }
+
+  .about-container h2 {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .about-container p {
+    font-size: 12px;
+    width: 70;
+    padding: 20px;
+  }
+
+  
 
  .footer__nav {
   display: flex;
@@ -746,7 +759,9 @@ iframe{
   }
   .about__title {
     font-size: 15x;
+    
   }
+  
   .about__description {
     font-size: 12px;
     text-align: left;
@@ -781,7 +796,7 @@ iframe{
 .body-textservice {
   display: block;
   min-height: 50vh;
-  background-image: url(images/services\ hero.jpg);
+  background-image: url(images/servicesHero.jpg);
   background-position: center;
   background-size: cover;
   margin-bottom: 100px
