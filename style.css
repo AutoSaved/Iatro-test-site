@@ -673,8 +673,7 @@ iframe{
     background-color: #6f8d75;
     height: 400px;
     width: 300px;
-    top: -400px;
-      
+    top: -400px;      
     text-align: center;
     transition: 1s;
   }
