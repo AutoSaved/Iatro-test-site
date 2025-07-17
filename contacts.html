@@ -15,8 +15,8 @@
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="header__nav">
+    <header class="header" id="navBar">
+      <nav class="header__nav" onscroll="hideMenu()">
         <a href="index.html" class="header__logo">
           <img src="images/logogry.svg" width="110px" />
         </a>
@@ -39,11 +39,22 @@
         var navLinks = document.getElementById("navLinks");
 
         function showMenu() {
-          navLinks.style.right = "0";
+          navLinks.style.top="0";
         }
         function hideMenu() {
           navLinks.style.top="-450px";
         }
+
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navBar").style.top = "0";
+  } else {
+    document.getElementById("navBar").style.top = "-20vh";
+  }
+  prevScrollpos = currentScrollPos;
+}
       </script>
     </header>
 

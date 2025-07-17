@@ -14,7 +14,7 @@
 <body>
       
         
-<header class="header">
+<header class="header" id="navBar">
   <nav class="header__nav">
     <a href="index.html" class="header__logo">
       <img src="images/logogry.svg" width="110px" />
@@ -49,6 +49,17 @@
 
 document.getElementById("serviceButton").onclick = function() {
       window.location.href = "service.html";}
+
+        var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navBar").style.top = "0";
+  } else {
+    document.getElementById("navBar").style.top = "-20vh";
+  }
+  prevScrollpos = currentScrollPos;
+}
 
   </script>
 </header>
