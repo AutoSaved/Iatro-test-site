@@ -340,6 +340,8 @@ nav img {
   min-height: 400px; 
 }
 
+
+
 .legal__title {
   text-align: center;
   font-size: 50px;
@@ -546,6 +548,40 @@ nav img {
   margin: auto;
 }
 
+
+/*========== META RESPONSE ==========*/
+
+.contactsHero-image {
+  display:block;
+ 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/contacthero.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ 
+ 
+}
+
+.contactsHero-image:hover {
+  background-image: url("images/contacthero.jpg");
+  transition: 1.5s;
+}
+
+.contactsHero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.contactsHero-text:hover {
+  color: #6f8d75;
+  transition: 1.5s;
+}
+
 .contact-card{
   display:grid; 
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -610,27 +646,6 @@ iframe{
   margin: auto;   
   position:static;
   }
-
-
-.contactsHero-image {
-  display:block;
- 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/contacthero.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.contactsHero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-}
 
 
 
