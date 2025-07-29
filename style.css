@@ -484,11 +484,9 @@ nav img {
   left: 25%;
   transform: translate(-50%, -50%);
   text-align: left;
-  font-size:clamp(1.5rem,3vw,3.5rem);
-  
+  font-size:clamp(1.5rem, 2vw, 1.5rem);
+
 }
-
-
 
 
 .services_box {
@@ -508,11 +506,11 @@ nav img {
   flex-direction: column;
   justify-content: space-around;
   gap: 15px;
-  align-content: center;
-  text-align: center;
+  text-align: left;
   margin: auto;
   width: 70%
 }
+
 
 .services_id {
   display: flex;
@@ -524,13 +522,13 @@ nav img {
 .services_description {
   color: #1f2937;
   width: 90%;
-  margin: auto;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+
+  font-size: clamp(0.8, 2vw, 1rem);
 }
 
 .services_title {
   text-align: center;
-  font-size:clamp(1.3rem, 4vw,1.8rem); ;
+  font-size:clamp(1.3rem, 2vw,1.5rem); ;
   padding: 20px;
   color: #6f8d75;
 }
@@ -540,8 +538,8 @@ nav img {
 }
 
 .services_illustration {
-  border-radius: 30px;
-  width: 90%;
+  border-radius: 20px;
+  width: 40%;
   height:auto;
   object-fit: cover;
   aspect-ratio: 16/9;
