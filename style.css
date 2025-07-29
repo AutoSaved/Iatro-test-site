@@ -471,8 +471,7 @@ nav img {
   background-size: cover;
   background-image: url("images/servicesHero.jpg");
   height: 100%;  
-  background-size: cover;
-  position: relative;  
+   position: relative;  
 }
 
 
@@ -833,4 +832,10 @@ iframe{
   gap: 20px;
   text-align: center;
 }
+  
+  .services_description{
+    text-align: center;
+    
+    
+  }
 }
