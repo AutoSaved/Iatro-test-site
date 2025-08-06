@@ -829,6 +829,14 @@ iframe{
   
 }
 
+.services_description{
+  color: #1f2937;
+  width: 100%;
+  text-align: center;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  margin: auto;
+}
+
 .location-title{
   text-align: center;
   font-size: 30px;
