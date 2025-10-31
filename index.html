@@ -1,111 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>iatrolexhome</title>
-        <link rel="stylesheet" href="style.css" >
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" >  
-       
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Icons Above Images</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-      
+  <div class="grid-container">
+    <div class="card">
+      <div class="image-wrapper">
         
-<header class="header" id="navBar">
-  <nav class="header__nav" >
-    <a href="index.html" class="header__logo">
-      <img src="images/logogry.svg" alt="iatrolex logo" width="110px" />
-    </a>
-    <div class="header__nav-links" id="navLinks">
-      <button title="button" class="header__close-icon" onclick="hideMenu()">
-        <img src="images/closeI.png" alt="close icon"/>
-      </button>
-      <ul class="header__menu">
-        <li class="header__menu-item"><a href="about.html">About</a></li>
-        <li class="header__menu-item"><a href="service.html">Services</a></li>
-        <li class="header__menu-item"><a href="https://www.iatrolex.co.za/">Medicolegal</a></li>
-        <li class="header__menu-item"><a href="contacts.html">Contact Us</a></li>
-      </ul>
+        <img src="images/Karino Beach dive poster-10.jpg" alt="Main Image" class="main-image">
+      </div>
+      <h1 class="card-title">Home</h1>
+      <p class="card-description">We are here to serve you</p>
     </div>
-    <button title="button" class="header__menu-icon" onclick="showMenu()">
-      <img src="images/menuI.png" alt="menu icon" />
-    </button>
-
-   
-
-  </nav>
-  <script>
-     var navLinks = document.getElementById("navLinks");
+<img src="images/page1@2x-100.jpg" alt="Main Image" class="main-image">
+<img src="images/page2@2x-100.jpg" alt="Main Image" class="main-image">
+<img src="images/page3@2x-100.jpg" alt="Main Image" class="main-image">
+<img src="images/page 4@2x-100.jpg" alt="Main Image" class="main-image">
+<img src="images/page 5@2x-100.jpg" alt="Main Image" class="main-image">
+<img src="images/page 6@2x-100.jpg" alt="Main Image" class="main-image">
+<img src="images/page 7@2x-100.jpg" alt="Main Image" class="main-image">
+<img src="images/page 8@2x-100.jpg" alt="Main Image" class="main-image">
+    
+    <div class="card">
+      <div class="image-wrapper">
         
-              function showMenu(){
-                navLinks.style.top = "0";
-              }
-              function hideMenu(){
-                navLinks.style.top = "-450px";
-              }
-
-
-
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navBar").style.top = "0";
-  } else {
-    document.getElementById("navBar").style.top = "-20vh";
-  }
-  prevScrollpos = currentScrollPos;
-}
-
-document.getElementById("serviceButton").onclick = function() {
-      window.location.href = "service.html";}
-  </script>
-</header>
-
-<section class="body-text">
-        <div class="text-box">
-            <h1>Iatrolex<br/>Diagnostic<br/>Radiologists</h1>
-            <p>Your Health Journey begins with a Precise diagnosis and Passionate Care. We are here<br/>to ensure you receive our<br/>best service.</p>
-        </div>
-      
-      </section>
-    <section class="about-container">
-            <h2>About Us</h2>
-            <p> We are highly qualified diagnostic radiologists, dedicated to delivering professional and dependable medical 
-               imaging services. Equipped with cutting-edge diagnostic technology and supported by a skilled team of medical 
-               imaging specialists, we ensure precision and excellence in patient care. At iatrolex, your health, comfort and 
-               safety are our top priorities, providing expert service in a welcoming environment.</p>
- </section>
-        
-           
-  
-<footer class="footer">
-  <nav class="footer__nav">
-    <a href="index.html" class="footer__logo">
-      <img src="images//logowht.svg" alt="iatrolex logo" width="80px" />
-    </a>
-    <div class="footer__links">
-      <ul class="footer__menu">
-        <li class="footer__menu-item"><a href="about.html">ABOUT US</a></li>
-        <li class="footer__menu-item"><a href="service.html">OUR SERVICES</a></li>
-        <li class="footer__menu-item"><a href="https://www.iatrolex.co.za/">MEDICOLEGAL</a></li>
-        <li class="footer__menu-item"><a href="contacts.html">CONTACT US</a></li>
-      </ul>
+        <img src="images/Karino Beach dive poster-04.jpg" alt="Main Image" class="main-image">
+      </div>
+      <h1 class="card-title">Enjoy the Music</h1>
+      <p class="card-description">The rhythm of the soul.</p>
     </div>
-     <div class="footer__social">
-          <a href="#"><img src="images/INTAICON.png" alt="Instagram logo social media link" /></a>
-          <a href="https://www.facebook.com/permalink.php/?story_fbid=110700961822242&id=100086470152352"><img src="images/FBICON.png" alt="facebook logo social media link"/></a>
-            <a href="#"><img src="images/TWITICON.png" alt="Twitter social media link, neutral tone" /></a>
-        </div>
-  </nav>
-</footer>
-
-
-    
- 
-    
-    </body>
+  </div>
+</body>
 </html>
